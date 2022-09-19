@@ -1,0 +1,2 @@
+class CategoriesPayment < ApplicationRecord
+end
