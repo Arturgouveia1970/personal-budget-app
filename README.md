@@ -1,6 +1,7 @@
 # ![](https://img.shields.io/badge/Microverse-blueviolet) Blog-App
-> ** This is a recipe App
-- The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
+> ** This is a personal budget controller Application
+
+The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 ## Built With
 
 - Ruby on Rails
