@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   unauthenticated do
     root 'users#index'
-   end
+  end
 
-   authenticated do
-     root 'categories#index', as: :authenticated_root
-   end
+  authenticated do
+    root 'categories#index', as: :authenticated_root
+  end
 end

@@ -1,37 +1,29 @@
-<nav class="mycategs">
-  <ul class="categs">
-    <li>
-      <%= link_to '<', root_path, class: "arrow-left" %>
-    </li>
-    <li>
-      <h1 class="txt">Categories</h1>
-    </li>
-    <li>
-      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "toa" %>
-    </li>
-  </ul>
-</nav>
-<% @categories.each do |category| %>
-  <%= link_to category_path(category) do %>
-    <div class="section-container">
-      <div class="icon">
-        <%= category.icon %>
-      </div>
+<div class="card text-center row">
+  <div class="card-header">
+    Categories
+  </div>
+  <div class="card-body w-100">
+    <% @categories.each do |category| %>
+      <%= link_to category_path(category) do %>
+        <div class="section-container list-group list-group-flush card">
+          <%# <div class="icon ">
+          </div> %>
 
-      <div class="name-time">
-        <p class="categories-name"><%= category.name %></p>
-        <span class="date"><%= category.created_at.strftime("%Y/%m/%d") %></span>
-      </div>
+          <div class="card-title">
+            <p class="categories-name list-group-item"><%= category.name %></p>
+            <span class="date"><%= category.created_at.strftime("%Y/%m/%d") %></span>
+          </div>
 
-      <div class="left">
-        <div class="sum-delete">
-          <p class="sum">Sum: $<%= category.payments.sum(:amount)%></p>
+          <div class="left list-group-item">
+            <div class="sum-delete">
+              <p class="sum">Sum: $<%= category.payments.sum(:amount)%></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  <% end %>
-<% end %>
-
-<div class="addc">
-  <%= link_to "Add New Category", new_category_path, class: "addsst" %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="card-footer text-muted">
+    <%= link_to "Add New Category", new_category_path, class: "btn btn-secondary w-100" %>
+  </div>
 </div>
