@@ -1,17 +1,5 @@
-<nav class="navbars">
-  <ul class="bars">
-  <li class="arrow-left">
-    <%= link_to '<', root_path, class: "arrow-left" %>
-  </li>
-    <li>
-      <p>Register</p>
-    </li>
-    <li>
-      <p class="d-none">Next</p>
-    </li>
-  </ul>
-</nav>
-
+<h1>Register</h1>
+</br>
 <div class="container">
  <div class="container">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -32,9 +20,9 @@
     <div class="field">
       <%= f.password_field :password_confirmation, autocomplete: "new-password",  placeholder: "Confirm your password", class: "pass" %>
     </div>
-
+    </br>
     <div class="actions">
-      <%= f.submit "Sign up", class: 'aye' %>
+      <%= f.submit "Sign up", class: 'btn btn-success' %>
     </div>
   <% end %>
   </div>
