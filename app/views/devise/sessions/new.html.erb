@@ -1,0 +1,22 @@
+<h1 class="logs">Log In</h1>
+</br>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "emms" %>
+  </div>
+  <hr />
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password(6 characters)", class: "pass" %>
+  </div>
+  </br>
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me, class: 'none' %>
+      <%= f.label :remember_me, class: 'none' %>
+    </div>
+  <% end %>
+  </br>
+  <div class="actions">
+    <%= f.submit "Log in", class: "btn btn-success" %>
+  </div>
+<% end %>

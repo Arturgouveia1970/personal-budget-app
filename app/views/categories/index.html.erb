@@ -1,0 +1,29 @@
+<div class="card text-center row">
+  <div class="card-header">
+    Categories
+  </div>
+  <div class="card-body w-100">
+    <% @categories.each do |category| %>
+      <%= link_to category_path(category) do %>
+        <div class="section-container list-group list-group-flush card">
+          <%# <div class="icon ">
+          </div> %>
+
+          <div class="card-title">
+            <p class="categories-name list-group-item"><%= category.name %></p>
+            <span class="date"><%= category.created_at.strftime("%Y/%m/%d") %></span>
+          </div>
+
+          <div class="left list-group-item">
+            <div class="sum-delete">
+              <p class="sum">Sum: $<%= category.payments.sum(:amount)%></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="card-footer text-muted">
+    <%= link_to "Add New Category", new_category_path, class: "btn btn-secondary w-100" %>
+  </div>
+</div>
