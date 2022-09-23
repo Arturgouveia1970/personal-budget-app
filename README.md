@@ -39,6 +39,12 @@ In your browser, go to
 
 - `http://localhost:3000`
 
+##Live Demo
+
+-[Live Demo](https://git.heroku.com/young-harbor-90243.git)
+
+-[Video Presentation](https://www.loom.com/share/151a19a3af134ace9a401ad252dc9272)
+
 ## Testing
 - To install rspec: gem install rspec
 - To run all the tests: rspec ./spec
