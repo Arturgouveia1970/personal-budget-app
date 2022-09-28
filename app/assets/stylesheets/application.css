@@ -50,7 +50,7 @@ svg {
 --------------------------- */
 @keyframes grow {
 	0% {
-		transform: scale(0);
+		  transform: scale(0);
 	}
 
 	30% {
@@ -64,16 +64,16 @@ svg {
 
 @keyframes turn {
 	0% {
-		transform: rotate(0) scale(0);
-		opacity: 0;
+		  transform: rotate(0) scale(0);
+		  opacity: 0;
 	}
 
 	60% {
-		transform: rotate(375deg) scale(1.1);
+		  transform: rotate(375deg) scale(1.1);
 	}
 
 	80% {
-		transform: rotate(355deg) scale(0.9);
+		  transform: rotate(355deg) scale(0.9);
 	}
 
 	100% {
@@ -82,8 +82,8 @@ svg {
 }
 
 @keyframes pulse {
-	50% {
-		transform: scale(1.4);
+  50% {
+		  transform: scale(1.4);
 	}
 }
 
@@ -91,13 +91,14 @@ svg {
   SVG Styles
 --------------------------- */
 
-
 .badge * {
-	transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
-.outer, 
+.outer,
+
 .inner,
+
 .inline {
 	animation: grow 1s ease-out backwards;
 }
@@ -119,15 +120,15 @@ svg {
 }
 
 .star circle:nth-of-type(2) {
-	animation-delay: 1.6s;
-	}
+  animation-delay: 1.6s;
+}
 
 .star circle:nth-of-type(3) {
-	animation-delay: 1.7s;
+  animation-delay: 1.7s;
 }
 
 .star circle:nth-of-type(4) {
-	animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 
 .star circle:nth-of-type(5) {
