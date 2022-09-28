@@ -1,12 +1,14 @@
-<section class="hold">
-</br>
-  <h1 class="title">Personal Budget App</h1>
-  <div class="btns">
-    <button class="btn btn-primary" type="button">
-      <%= link_to "SIGN IN", new_user_session_path %>
-    </button>
-    <button class="btn btn-success" type="button">
-      <%= link_to "SIGN UP", new_user_registration_path %>
-    </button>
-  </div>
+<%= render 'layouts/navbar' %>
+<section class="form">
+  </br>
+  </br>
+  <%= render "badge" %> 
+    <div class="d-flex flex-column fixed-bottom">
+      <button class="btn btn-success mb-1" type="button">
+        <%= link_to "SIGN IN", new_user_session_path, class:"btn btn-success mb-1" %>
+      </button>
+      <button class="btn btn-secondary mb-4" type="button">
+        <%= link_to "SIGN UP", new_user_registration_path, class:"btn btn-secondary mb-1" %>
+      </button>
+    </div>
 </section>
