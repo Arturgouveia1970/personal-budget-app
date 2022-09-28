@@ -118,9 +118,8 @@ svg {
 	animation: pulse .7s 1.5s;
 }
 
-	
 .star circle:nth-of-type(2) {
-		animation-delay: 1.6s;
+	animation-delay: 1.6s;
 	}
 
 .star circle:nth-of-type(3) {
@@ -132,5 +131,5 @@ svg {
 }
 
 .star circle:nth-of-type(5) {
-	animation-delay: 1.9s;
+  animation-delay: 1.9s;
 }
