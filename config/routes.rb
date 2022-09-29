@@ -4,15 +4,15 @@ Rails.application.routes.draw do
   resources :categories
   resources :users
   
-  Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  Defines the root path route ("/")
+  # Defines the root path route ("/")
   unauthenticated :users  do
     root 'users#index'
   end
 
   authenticated :users do
-    root 'categories#index'
+    root 'categories#index', as: :authenticated_root
     
   end
 end
