@@ -1,5 +1,5 @@
 <h1 class="logs">Log In</h1>
-</br>
+<br/>
 
 
 
@@ -12,14 +12,14 @@
     <div class="form-outline mb-4">
       <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password(6 characters)", class: "form-control" %>
     </div>
-    </br>
+    <br/>
     <% if devise_mapping.rememberable? %>
       <div class="field">
         <%= f.check_box :remember_me %>
         <%= f.label :remember_me %>
       </div>
     <% end %>
-    </br>
+    <br/>
     <div class="actions">
       <%= f.submit "Log in", class: "btn btn-success" %>
     </div>
