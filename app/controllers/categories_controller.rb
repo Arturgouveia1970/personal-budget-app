@@ -22,14 +22,13 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
     @category.author_id = current_user.id
 
-      if @category.save
-        flash[:success] = "'#{@category.name}' created successfully !!"
-        redirect_to categories_path(user_id: current_user.id)
+    if @category.save
+      flash[:success] = "'#{@category.name}' created successfully !!"
+      redirect_to categories_path(user_id: current_user.id)
     else
       flash.now[:error] = "Couldn't create '#{@category.name} !!'"
       redirect_to new_user_category_path(current_user)
     end
-  
   end
 
   def update
