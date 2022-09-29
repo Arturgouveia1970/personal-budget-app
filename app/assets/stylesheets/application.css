@@ -11,3 +11,27 @@
   src: url('Proxima Nova Light.ttf');
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+body {
+  font-family: 'Proxima Nova Light', sans-serif !important;
+  background: #8069a1;
+  padding-top: 60px;
+}
+
+h1 {
+  font-family: 'Proxima Nova Bold', sans-serif !important;
+}
+
+.added {
+  background-color: #fff;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}
+
+.text-decoration h5 {
+  text-decoration: none;
+}
