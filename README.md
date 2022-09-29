@@ -73,10 +73,10 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- Microverse
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+
+- Gregoire Vella -for original design.
+- Great apreciation to Microverse staff, special thanks to 
+  the LTAs team.
 
 ## 📝 License
 
