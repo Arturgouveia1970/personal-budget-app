@@ -22,15 +22,14 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
     @category.author_id = current_user.id
 
-    respond_to do |format|
       if @category.save
-        format.html { redirect_to categories_url, notice: 'Category was successfully created.' }
-        format.json { render :show, status: :created, location: @category }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @category.errors, status: :unprocessable_entity }
-      end
+        flash[:success] = "'#{@category.name}' created successfully !!"
+        redirect_to categories_path(user_id: current_user.id)
+    else
+      flash.now[:error] = "Couldn't create '#{@category.name} !!'"
+      redirect_to new_user_category_path(current_user)
     end
+  
   end
 
   def update
