@@ -1,0 +1,16 @@
+example_id                                | status | run_time        |
+----------------------------------------- | ------ | --------------- |
+./spec/features/category_spec.rb[1:1]     | passed | 0.02367 seconds |
+./spec/features/category_spec.rb[1:2]     | passed | 0.03155 seconds |
+./spec/features/payment_spec.rb[1:1]      | passed | 0.02919 seconds |
+./spec/features/payment_spec.rb[1:2]      | passed | 0.1341 seconds  |
+./spec/models/category_spec.rb[1:1:1]     | passed | 0.00177 seconds |
+./spec/models/category_spec.rb[1:1:2]     | passed | 0.00236 seconds |
+./spec/models/payments_spec.rb[1:1:1]     | passed | 0.02739 seconds |
+./spec/models/payments_spec.rb[1:1:2]     | passed | 0.00186 seconds |
+./spec/models/user_spec.rb[1:1:1]         | passed | 0.03035 seconds |
+./spec/models/user_spec.rb[1:1:2]         | passed | 0.00349 seconds |
+./spec/requests/categories_spec.rb[1:1:1] | passed | 0.00669 seconds |
+./spec/requests/categories_spec.rb[1:2:1] | passed | 0.00759 seconds |
+./spec/requests/payments_spec.rb[1:1:1]   | passed | 0.00608 seconds |
+./spec/requests/payments_spec.rb[1:2:1]   | passed | 0.0971 seconds  |

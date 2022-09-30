@@ -1,7 +1,7 @@
 /* @import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
+@import 'bootstrap-icons/font/bootstrap-icons'; */
 
-@font-face {
+/* @font-face {
   font-family: 'Proxima Nova Bold';
   src: url('Proxima Nova Bold.ttf');
 }
@@ -11,8 +11,12 @@
   src: url('Proxima Nova Light.ttf');
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
 body {
   font-family: 'Proxima Nova Light', sans-serif !important;
+  background: #8069a1;
+  padding-top: 60px;
 }
 
 h1 {
@@ -21,4 +25,13 @@ h1 {
 
 .added {
   background-color: #fff;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.text-decoration h5 {
+  text-decoration: none;
 }

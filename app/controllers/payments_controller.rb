@@ -14,18 +14,16 @@ class PaymentsController < ApplicationController
   end
 
   def create
-    @category = Category.find(params[:category_id])
-    @payment = current_user.payments.new(payment_params)
+    @category = Category.includes(:author).find(params[:category_id])
+    @payment = current_user.payments.create(payment_params)
+    @category.payments << @payment
 
-    respond_to do |format|
-      if @payment.save
-        @payment.categories << @category
-        format.html { redirect_to category_url(@category), notice: 'Payment was successfully created.' }
-        format.json { render :show, status: :created, location: @payment }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @payment.errors, status: :unprocessable_entity }
-      end
+    if @payment.save
+      flash[:success] = "'#{@payment.name}' created successfully !!"
+      redirect_to category_path(author_id: current_user.id, id: @category.id)
+    else
+      flash.now[:error] = "Couldn't create '#{@payment.name} !!'"
+      redirect_to new_payment(current_user, @category.id)
     end
   end
 
