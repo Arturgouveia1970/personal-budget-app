@@ -4,7 +4,7 @@ RSpec.feature 'payments', type: :feature do
   include Devise::Test::IntegrationHelpers
 
   before(:each) do
-    @user = User.create(name: 'jojo', email: 'jo@example.com', password: '123456') 
+    @user = User.create(name: 'jojo', email: 'jo@example.com', password: '123456')
     @category = Category.create(name: 'Education', icon: 'https://google.com', author_id: @user.id)
     @payment = @category.payments.create(name: 'book1', amount: 25, author_id: @user.id)
     sign_in @user
