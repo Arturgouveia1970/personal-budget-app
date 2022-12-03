@@ -3,10 +3,19 @@
  ** This is a personal budget controller Mobile Application
 
 The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+
 ## Built With
 
 - Ruby on Rails
 - Ruby
+
+## Live Demo
+
+[Heroku](https://artur-badget.herokuapp.com/)
+
+## Demo Video
+
+[Video](https://www.loom.com/share/5b30f88939024a6c95c16d21019766bb)
 
 ## Prerequisites
 
@@ -39,6 +48,12 @@ In your browser, go to
 
 - `http://localhost:3000`
 
+##Live Demo
+
+-[Live Demo](https://git.heroku.com/young-harbor-90243.git)
+
+-[Video Presentation](https://www.loom.com/share/151a19a3af134ace9a401ad252dc9272)
+
 ## Testing
 - To install rspec: gem install rspec
 - To run all the tests: rspec ./spec
@@ -64,10 +79,10 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- Microverse
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+
+- Gregoire Vella -for original design.
+- Great apreciation to Microverse staff, special thanks to 
+  the LTAs team.
 
 ## 📝 License
 
